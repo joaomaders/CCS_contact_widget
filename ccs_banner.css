@@ -1,0 +1,113 @@
+.ccs-banner {
+   display: none;
+}
+.ccs-banner-mobile {
+   display: none;
+}
+
+@media (min-width: 1024px) {
+   .ccs-banner {
+      width: 100vw;
+      height: 280px;
+      background-color: black;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+   }
+   .ccs-banner-texts {
+      width: 360px;
+      color: white;
+      margin: 0px 35px;
+   }
+   .ccs-banner-title {
+      margin-bottom: 10px;
+      margin-top: 0px;
+   }
+   .ccs-banner-subtitle {
+      margin-bottom: 0px;
+      font-size: 17px;
+   }
+   .ccs-banner-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .ccs-banner-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 200px;
+      background-color: #4CED6B;
+      border: solid 2px #4CED6B;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+   }
+   .ccs-banner-button img{
+      width: 37.5px;
+      height: auto;
+   }
+   .ccs-banner-button:first-child {
+      margin-bottom: 20px;
+   }
+   .ccs-banner-button:last-child {
+      margin-bottom: 20px;
+      background-color: transparent;
+      color: white;
+   }
+}
+
+@media (max-width: 1023px) {
+   .ccs-banner-mobile {
+      padding: 35px 0px;
+      background-color: black;
+      color: white;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   .ccs-banner-mobile-img {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .ccs-banner-mobile-texts {
+      width: 85%;
+   }
+   .ccs-banner-mobile-buttons {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 35px;
+   }
+   .ccs-banner-mobile-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40vw;
+      height: 40px;
+      background-color: #4CED6B;
+      border: solid 2px #4CED6B;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+   }
+   .ccs-banner-mobile-button img{
+      width: 37.5px;
+      height: auto;
+   }
+   .ccs-banner-mobile-button:first-child {
+      margin-bottom: 20px;
+   }
+   .ccs-banner-mobile-button:last-child {
+      margin-bottom: 20px;
+      background-color: transparent;
+      color: white;
+   }
+}
