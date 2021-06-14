@@ -1,1 +1,1 @@
-# CCS_contact_widget
+# CCS Contact Widget.
