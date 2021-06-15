@@ -1,6 +1,9 @@
 const ccsPopupBackground = document.getElementById('ccsPopupBackground');
 const ccsWidgetDiv = document.getElementById('ccsWidgetDiv');
 
+let hideCcsWidget = getCookie('hideCcsWidget');
+ccsWidgetDiv.style.display = hideCcsWidget == 1 ? "none" : "flex";
+
 document.addEventListener('click', function(e) {
 
    if (e.target.id == "ccsPopupBackground" || e.target.id == "ccsPopUpClose") {
@@ -41,9 +44,4 @@ function getCookie(name) {
    }
 
    return unescape(cookies.substring(begin + prefix.length, end));
-   }
-
-   let hideCcsWidget = getCookie('hideCcsWidget');
-   if (hideCcsWidget == 1) {
-   ccsWidgetDiv.style.display = "none";
 }

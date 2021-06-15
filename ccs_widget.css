@@ -53,7 +53,7 @@
       font-size: 16px !important;
    }
    .ccs-popup-button {
-      width: 130px !important;
+      width: 250px !important;
    }
    .hide-ccs-widget {
       width: 9px !important;
@@ -93,6 +93,7 @@
    right: 30px;
 }
 .ccs-widget {
+   display: none;
    cursor: pointer;
    position: fixed;
    right: 35px;
@@ -172,14 +173,16 @@
    margin: 20px 0px;
    width: 100%;
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   align-items: center;
 }
 .ccs-popup-button {
-   width: 158px;
+   width: 300px;
    height: 40px;
    text-align: center;
    border-radius: 6px;
    border: solid 2px #4CED6B;
+   background-color: #4CED6B;
    font-size: 16px;
    font-weight: 600;
    cursor: pointer;
@@ -190,12 +193,6 @@
 .ccs-popup-button img{
    width: 37.5px;
    height: auto;
-}
-.ccs-popup-button.first {
-   background-color: #4CED6B;
-}
-.ccs-popup-button.last {
-   background-color: transparent;
 }
 @keyframes shake {
    0%   { transform: translate(2px, 2px) rotate(0deg); }
