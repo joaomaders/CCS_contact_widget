@@ -97,9 +97,13 @@ function ccs_widget_renderTemplate() {
 	ccs_widget_template += ccs_widget_templateParts[1];
 };
 
-window.addEventListener('DOMContentLoaded', function() {
-	
+window.addEventListener('DOMContentLoaded', function() {	
    console.log('CCS Widget added');
    ccs_widget_setup();
-
 });
+setTimeout(() => {
+    if (ccs_widget_template == undefined) {
+        ccs_widget_setup();
+    }
+}, 5000);
+
